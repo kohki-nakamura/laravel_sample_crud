@@ -11,7 +11,7 @@
 	</div>
 	@foreach ($articles as $article)
 		<h4>{{$article->title}}</h4>
-		<p>{{$article->body}}</p>
+		<p>{!! $article->mark_body !!}</p>
 		<a href="/articles/{{$article->id}}">詳細</a>
 		<a href="/articles/{{$article->id}}/edit">編集</a>
 		<form action="/articles/{{$article->id}}" method="post">

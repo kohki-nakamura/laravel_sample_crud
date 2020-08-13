@@ -7,7 +7,7 @@
 {{-- application.blade.phpの@yield('content')に以下のレイアウトを代入 --}}
 @section('content')
 	<h1>{{$article->title}}</h1>
-	<p>{{$article->body}}</p>
+	<p>{!! $article->mark_body !!}</p>
 	<br><br>
 	<a href="/articles/{{$article->id}}/edit">編集</a>
 	<form action="/articles/{{$article->id}}" method="post">
